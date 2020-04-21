@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/refreshScreen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="90dp"
+        android:id="@+id/InternetStatusimage"
+        android:src="@drawable/nointernet"
+        android:layout_centerInParent="true"
+        android:layout_height="90dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Top Rated"
+        android:textSize="18sp"
+        android:id="@+id/type"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/type"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

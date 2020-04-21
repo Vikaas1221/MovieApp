@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        android:id="@+id/card"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/movie_poster"
+                android:src="@drawable/noormahal"
+                android:scaleType="fitXY"
+                android:layout_height="150dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/movie_poster"
+                android:text="   "
+                android:maxLines="2"
+                android:maxWidth="450dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/movie_title"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Rating: "
+                android:textStyle="bold"
+                android:layout_below="@+id/movie_title"
+                android:id="@+id/rating_title"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="8.2"
+                android:layout_below="@+id/movie_title"
+                android:layout_toRightOf="@+id/rating_title"
+                android:id="@+id/rating"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/movie_title"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Language: "
+                android:textStyle="bold"
+                android:layout_below="@+id/movie_title"
+                android:id="@+id/language_title"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="en"
+                android:layout_below="@+id/movie_title"
+                android:layout_toRightOf="@+id/rating_title"
+                android:id="@+id/language"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/rating_title"
+                android:id="@+id/description_title."
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/descrption"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:layout_below="@+id/rating_title"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/description_title."
+                android:text="sdfghasdfgasdfbasdfasdfasdfsdfvbv"
+                android:id="@+id/movie_desc"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/movie_desc"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/release_date"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="Release Date "
+                android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="12/23/23"
+                    android:id="@+id/date"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
